@@ -44,11 +44,11 @@ RUN R -e "install.packages(c(\
 RUN rm -r /srv/shiny-server/*
 
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
-COPY wwVOCSignature /srv/shiny-server/ww_Signature_Main_VoC
-COPY wwVariantSignature /srv/shiny-server/ww_Signature_Variants_of_Interest
-COPY wwMutVOCAssociated /srv/shiny-server/ww_VoC-associated_mutations
-COPY wwMutNOTVOCAssociated1 /srv/shiny-server/ww_NOT_VoC-associated_mutations
-COPY wwMutNOTVOCAssociated2 /srv/shiny-server/ww_NOT_VoC-associated_mutations__non-described-mutations
+COPY wwVOCSignature /srv/shiny-server/ww_1_Signature_Main_VoC
+COPY wwVariantSignature /srv/shiny-server/ww_2_Signature_Variants_of_Interest
+COPY wwMutVOCAssociated /srv/shiny-server/ww_3_VoC-associated_mutations
+COPY wwMutNOTVOCAssociated1 /srv/shiny-server/ww_4_NOT_VoC-associated_mutations
+COPY wwMutNOTVOCAssociated2 /srv/shiny-server/ww_5_NOT_VoC-associated_mutations__non-described-mutations
 
 
 EXPOSE 3838
