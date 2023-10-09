@@ -11,7 +11,7 @@ load("plot.RData")
 ui <- fluidPage(
   
   checkboxGroupInput("choice", "Select a group:", choices = levels(as.factor(data.voc.force$lineage)), inline = TRUE, selected = levels(as.factor(data.voc.force$lineage))),
-  plotlyOutput("graph", height = 1000, width = 1600)
+  plotlyOutput("graph", height = 4000, width = 1600)
   
 )
 
