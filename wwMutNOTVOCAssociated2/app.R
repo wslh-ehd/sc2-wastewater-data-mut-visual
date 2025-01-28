@@ -24,7 +24,7 @@ ui <- fluidPage(
       pickerInput("choice_run", "Select a run:", choices = levels(as.factor(data.snp.notvoc$run)), multiple = TRUE, options = list(`actions-box` = TRUE), selected = levels(as.factor(data.snp.notvoc$run))),
       #textInput("choice_mut.nt", "Select a mutation (nt):", value = "Enter nt mutation"),
       #textInput("choice_mut.aa", "Select a mutation (aa):", value = "Enter aa mutation"),
-      radioButtons("choice_n1n2", "Highlight N1/N2 primer/probe sites", choices = list("All" = 1, "N1" = 2, "N2" = 3), selected = 1),
+      radioButtons("choice_n1n2", "Highlight N1/N2 primer/probe sites", choices = list("All" = 1, "N1" = 2, "N2" = 3), selected = 2),
       radioButtons("choice_display", "Samples ordered by:", choices = list("wwtp name" = 1, "date" = 2), selected = 2)
       ),
     
