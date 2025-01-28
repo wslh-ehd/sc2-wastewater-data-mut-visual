@@ -22,7 +22,7 @@ ui <- fluidPage(
       pickerInput("choice_run", "Select a run:", choices = levels(as.factor(data.snp.voc$run)), multiple = TRUE, options = list(`actions-box` = TRUE), selected = levels(as.factor(data.snp.voc$run))),
       #textInput("choice_mut.nt", "Select a mutation (nt):", value = "Enter nt mutation"),
       #textInput("choice_mut.aa", "Select a mutation (aa):", value = "Enter aa mutation"),
-      radioButtons("choice_n1n2", "Highlight N1/N2 primer/probe sites", choices = list("All" = 1, "N1" = 2, "N2" = 3), selected = 1),
+      radioButtons("choice_n1n2", "Highlight N1/N2 primer/probe sites", choices = list("All" = 1, "N1" = 2, "N2" = 3), selected = 2),
       sliderInput("choice_no.snp", "SNP shared among # VoC", min = 1, max = max(data.snp.voc$SNP.lineage.count), value = c(1, max(data.snp.voc$SNP.lineage.count)))
       ),
     
